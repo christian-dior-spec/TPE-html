@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+ 
+    
+    <div class="dropdown">
+      <button class="dropbtn">Menu ▼</button>
+      <div class="dropdown-content">
+        <a href="../index.html">Accueil</a>
+        <a href="../cv/cv.html">CV</a>
+        <a href="#">Formulaire de paiement</a>
+      </div>
+    </div>
+  
+    <fieldset>
+      <form action="traitement.php" method="post">
+      <legend> <h1><strong> Bienvenue sur notre site de d'inscription en ligne</h1></legend>
+      <div id="info"><h2> <i>Veillez saisir les informations requises</i></h2></div> 
+      <div class="un">
+       <div class="champ"> <label for="nom">Nom :</label> <input type="text" name="nom" id="nom" required></div><br><br>
+        <div class="champ"><label for="prenom">Prenom :</label> <input type="text" name="prenom" id="prenom" required></div><br><br>
+        <div class="champ"><label for="email">Adresse Email :</label> <input type="email" name="email" id="email" required></div><br><br>
+        <div class="champ"><label for="date">Date de naissance :</label> <input type="date" name="date" id="date"></div>
+        <div class="sexe">
+        <label for="sexe">Sexe :</label>
+            <div class="input-radio">
+          <input type="radio" id="homme" name="genre" value="homme">
+          <label for="homme">M</label>
+          <input type="radio" id="femme" name="genre" value="femme">
+          <label for="femme">F</label>
+        </div>
+      <div class="password">
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password">
+      </div>
+      <div class="pays">
+        <label for="ville">Pays de Residence :</label>
+        <select id="ville" name="ville">
+          <option value="">--Choisir une ville--</option>
+          <option value="algerie">Algerie</option>
+          <option value="afganigstan">Afganigstan</option>
+          <option value="angola">Angola</option>
+          <option value="benin">benin</option>
+        </select>
+      </div>
+      <div class="bouton">
+    <input type="submit" value="Envoyer">
+  </div>
+  <div class="reset">
+    <input type="reset" value="Renitialiser">
+  </div>
+     </div>
+     <div class="retour"><a href="../index.html">Retour A l'Accueil</a></div>
+      
+      </form>
+      </fieldset>
+</body>
+</html>

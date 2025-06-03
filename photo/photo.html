@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Galerie d'images</title>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; /* espace entre les images */
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 200px;   /* largeur uniforme */
+      height: 150px;  /* hauteur uniforme */
+      object-fit: cover; /* pour recadrer proprement */
+      border-radius: 8px; /* coins arrondis optionnels */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* ombre optionnelle */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+    <img src="../images/deux.png" alt="Image 1">
+    <img src="../images/trois.jpg" alt="Image 2">
+    <img src="../images/un.jpg" alt="Image 3">
+    <img src="../images/IMG-20241028-WA0153.jpg" alt="">
+    <img src="../images/IMG-20250107-WA0024.jpg" alt="">
+    <img src="../images/IMG-20250107-WA0029.jpg" alt="">
+    <!-- Ajoute autant d'images que tu veux -->
+  </div>
+
+</body>
+</html>
